@@ -13,7 +13,7 @@ pkgname=('linux513' 'linux513-headers')
 _kernelname=-MANJARO
 _basekernel=5.13
 _basever=513
-pkgver=5.13.9
+pkgver=5.13.10
 pkgrel=1
 arch=('x86_64')
 url="https://www.kernel.org/"
@@ -67,7 +67,7 @@ source=("https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_basekernel}.tar.x
         '0513-bootsplash.gitpatch'
         )
 sha256sums=('3f6baa97f37518439f51df2e4f3d65a822ca5ff016aa8e60d2cc53b95a6c89d9'
-            '358da3bbe06ad323c4d0fec4fc8d755a07733ea69363101913fdd6056878113d'
+            '0e0c65ad79ea2661cab8d89f811c903e8c87db12b1193f4a311dfaa3a266a625'
             'dbfcfc4b179c6a1e61ee3d8d51ec64f98663e1ee1fd784f3391c5736598c2d12'
             'fc896e5b00fad732d937bfb7b0db41922ecdb3a488bc1c1b91b201e028eed866'
             '986f8d802f37b72a54256f0ab84da83cb229388d58c0b6750f7c770818a18421'
@@ -75,6 +75,7 @@ sha256sums=('3f6baa97f37518439f51df2e4f3d65a822ca5ff016aa8e60d2cc53b95a6c89d9'
             '7823d7488f42bc4ed7dfae6d1014dbde679d8b862c9a3697a39ba0dae5918978'
             '95745075edd597caa92b369cfbcd11a04c9e3c88c0c987c70114924e1e01df5c'
             '1965a68b08f5379a581c83e8dbe42e7ff8ec5e79da02fcb755556280a8c76c65'
+            '22f259620bfb89ffb4e65fcc810d8d796d0c3714a31dc6378122ed8cc1645bdd'
             '5e804e1f241ce542f3f0e83d274ede6aa4b0539e510fb9376f8106e8732ce69b'
             '1d58ef2991c625f6f0eb33b4cb8303932f53f1c4694e42bae24c9cd36d2ad013'
             '2b11905b63b05b25807dd64757c779da74dd4c37e36d3f7a46485b1ee5a9d326'
