@@ -65,6 +65,8 @@ source=("https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_basekernel}.tar.x
         '0511-bootsplash.patch'
         '0512-bootsplash.patch'
         '0513-bootsplash.gitpatch'
+        # VFIO
+        '0900-add-acs-overrides.patch'
         )
 sha256sums=('3f6baa97f37518439f51df2e4f3d65a822ca5ff016aa8e60d2cc53b95a6c89d9'
             '6fadc31348a0c0bbce86b067811d1dadae307bbde5b712c688b3193d73f0fb71'
@@ -93,7 +95,8 @@ sha256sums=('3f6baa97f37518439f51df2e4f3d65a822ca5ff016aa8e60d2cc53b95a6c89d9'
             'e9f22cbb542591087d2d66dc6dc912b1434330ba3cd13d2df741d869a2c31e89'
             '27471eee564ca3149dd271b0817719b5565a9594dc4d884fe3dc51a5f03832bc'
             '60e295601e4fb33d9bf65f198c54c7eb07c0d1e91e2ad1e0dd6cd6e142cb266d'
-            '035ea4b2a7621054f4560471f45336b981538a40172d8f17285910d4e0e0b3ef')
+            '035ea4b2a7621054f4560471f45336b981538a40172d8f17285910d4e0e0b3ef'
+            'b90be7b79652be61f7d50691000f6a8c75a240dc2eee2667b68d984f67583f77')
 
 prepare() {
   cd "linux-${_basekernel}"
