@@ -14,7 +14,7 @@ _kernelname=-MANJARO-VFIO
 _basekernel=5.13
 _basever=513
 pkgver=5.13.19
-pkgrel=1
+pkgrel=2
 arch=('x86_64')
 url="https://www.kernel.org/"
 license=('GPL2')
@@ -39,6 +39,8 @@ source=("https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_basekernel}.tar.x
         '0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-CLONE_NEWUSER.patch'
         '0002-HID-quirks-Add-Apple-Magic-Trackpad-2-to-hid_have_special_driver-list.patch'
         # Temp Fixes
+        # Fixes https://bugzilla.kernel.org/show_bug.cgi?id=214455
+        'net-qrtr-revert-check-in-qrtr_endpoint_post.patch::https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/patch/net/qrtr?id=d2cabd2dc8da78faf9b690ea521d03776686c9fe'
         # MANJARO Patches
         '0101-i2c-nuvoton-nc677x-hwmon-driver.patch'
         '0102-iomap-iomap_bmap-should-accept-unwritten-maps.patch'
@@ -80,6 +82,7 @@ sha256sums=('3f6baa97f37518439f51df2e4f3d65a822ca5ff016aa8e60d2cc53b95a6c89d9'
             'fc896e5b00fad732d937bfb7b0db41922ecdb3a488bc1c1b91b201e028eed866'
             '986f8d802f37b72a54256f0ab84da83cb229388d58c0b6750f7c770818a18421'
             'df5843818f1571841e1a8bdbe38d7f853d841f38de46d6a6a5765de089495578'
+            '143d6361c596231051bffad1dcfbf66bca9ab19cfeeb30889d1030a7a668faa3'
             '7823d7488f42bc4ed7dfae6d1014dbde679d8b862c9a3697a39ba0dae5918978'
             '95745075edd597caa92b369cfbcd11a04c9e3c88c0c987c70114924e1e01df5c'
             '1965a68b08f5379a581c83e8dbe42e7ff8ec5e79da02fcb755556280a8c76c65'
