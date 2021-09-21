@@ -68,11 +68,15 @@ source=("https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_basekernel}.tar.x
         # VFIO
         '0900-add-acs-overrides.patch'
         # Optimizations
-        '0999-more-uarches-for-kernel-5.8-5.14.patch'
+        '0901-more-uarches-for-kernel-5.8-5.14.patch'
+        '0902-clear-patches.patch'
+        # Nice to have
+        '0903-v5.13-futex2_interface.patch'
+        '0904-v5.13-winesync.patch'
         )
 sha256sums=('3f6baa97f37518439f51df2e4f3d65a822ca5ff016aa8e60d2cc53b95a6c89d9'
             '6fadc31348a0c0bbce86b067811d1dadae307bbde5b712c688b3193d73f0fb71'
-            '20e6d68abd274a672a5c6b0f6a3025169b4b5626658b01b473c16e362b5ee6d3'
+            '98e24675b1296670680a67d8a70e066e153ac0ee21e1ceb25579381922ce9af4'
             'fc896e5b00fad732d937bfb7b0db41922ecdb3a488bc1c1b91b201e028eed866'
             '986f8d802f37b72a54256f0ab84da83cb229388d58c0b6750f7c770818a18421'
             'df5843818f1571841e1a8bdbe38d7f853d841f38de46d6a6a5765de089495578'
@@ -99,7 +103,10 @@ sha256sums=('3f6baa97f37518439f51df2e4f3d65a822ca5ff016aa8e60d2cc53b95a6c89d9'
             '60e295601e4fb33d9bf65f198c54c7eb07c0d1e91e2ad1e0dd6cd6e142cb266d'
             '035ea4b2a7621054f4560471f45336b981538a40172d8f17285910d4e0e0b3ef'
             'b90be7b79652be61f7d50691000f6a8c75a240dc2eee2667b68d984f67583f77'
-            '2f99d9e37f372925e054115bfead4723a328ffbdb7bf958753aab2ac48dc5673')
+            '2f99d9e37f372925e054115bfead4723a328ffbdb7bf958753aab2ac48dc5673'
+            '35a7cde86fb94939c0f25a62b8c47f3de0dbd3c65f876f460b263181b3e92fc0'
+            '9ec679871cba674cf876ba836cde969296ae5034bcc10e1ec39b372e6e07aab0'
+            '034d12a73b507133da2c69a34d61efd2f6b6618549650aa26d748142d22002e1')
 
 prepare() {
   cd "linux-${_basekernel}"
